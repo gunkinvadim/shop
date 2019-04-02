@@ -1,11 +1,11 @@
 var storeName = prompt("Название вашего магазина?");
-var budget = +prompt("Ваш бюджет (руб.)?");
+var budget = +prompt("Ваш бюджет (руб.)?", 0);
+var budgetDaily = budget / 30;
 var shopGoods = [
 		prompt("Какой тип товаров будем продавать?"),
 		prompt("Какой тип товаров будем продавать?"),
 		prompt("Какой тип товаров будем продавать?")
 ];
-var budgetDaily = budget / 30;
 
 employers = {
 		director: "Михалыч",
