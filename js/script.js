@@ -82,35 +82,3 @@ console.log('Наша программа включает в себя данны
 for (let key in appData) {
     console.log(key + ': ' + appData[key]);
 }
-
-// let i = 0;
-// while (i < 2) {
-//     let a = prompt('Введите обязательную статью расходов в этом месяце', ''),
-//     b = prompt('Во сколько обойдется', '');
-
-// if ( (typeof(a)) === 'string' && (typeof(a)) === 'string'
-//     && (typeof(a)) != null && (typeof(b)) != null
-//     && a != '' && b != '' && a.length < 50) {
-//         console.log('done');
-//         appData.expenses[a] = b;
-//     } else {
-//         i--;
-//     }
-// i++
-// }
-
-// let i = 0;
-// do {
-//     let a = prompt('Введите обязательную статью расходов в этом месяце', ''),
-//     b = prompt('Во сколько обойдется', '');
-
-// if ( (typeof(a)) === 'string' && (typeof(a)) === 'string'
-//     && (typeof(a)) != null && (typeof(b)) != null
-//     && a != '' && b != '' && a.length < 50) {
-//         console.log('done');
-//         appData.expenses[a] = b;
-//     } else {
-//         i--;
-//     }
-// i++;
-// } while (i < 2);
