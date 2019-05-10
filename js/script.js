@@ -37,6 +37,10 @@ startBtn.addEventListener('click', function() {
     yearValue.value = new Date(Date.parse(time)).getFullYear();
     monthValue.value = new Date(Date.parse(time)).getMonth() + 1;
     dayValue.value = new Date(Date.parse(time)).getDate();
+    
+    expensesBtn.removeAttribute('disabled');
+    optionalExpensesBtn.removeAttribute('disabled');
+    countBtn.removeAttribute('disabled');
 });
 
 expensesBtn.addEventListener('click', function() {
@@ -70,7 +74,7 @@ optionalExpensesBtn.addEventListener('click', function() {
 
 countBtn.addEventListener('click', function() {
     if (appData.budget != undefined) {
-        appData.moneyPerDay = (appData.budget / 30).toFixed();
+        appData.moneyPerDay = ((appData.budget - expensesValue.textContent) / 30).toFixed();
         dayBudgetValue.textContent = appData.moneyPerDay;
     
         if(appData.moneyPerDay < 100) {
